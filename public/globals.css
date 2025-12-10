@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  color: #0A1A2F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient Background Utilities */
+.gradient-glow {
+  background: radial-gradient(circle at center, rgba(56, 229, 255, 0.1) 0%, transparent 70%);
+}
+
+.gradient-mesh {
+  background-image: 
+    radial-gradient(at 40% 20%, rgba(26, 115, 232, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(56, 229, 255, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(26, 115, 232, 0.08) 0px, transparent 50%);
+}
