@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { Download, Sparkles } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { motion } from "framer-motion";
+import { Download, Sparkles } from "lucide-react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import profileImg from "../assets/profile.jpg";
 
 export function HeroSection() {
   return (
@@ -8,7 +9,10 @@ export function HeroSection() {
       {/* Ambient Background Gradients */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-96 h-96 bg-[#7B61FF] rounded-full blur-[120px] opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#00E5FF] rounded-full blur-[120px] opacity-30 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-[#00E5FF] rounded-full blur-[120px] opacity-30 animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-[#7B61FF] to-[#00E5FF] rounded-full blur-[150px] opacity-20"></div>
       </div>
 
@@ -22,7 +26,7 @@ export function HeroSection() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
           className="absolute top-40 right-20 w-32 h-32 bg-gradient-to-br from-[#7B61FF]/20 to-[#00E5FF]/20 rounded-full blur-2xl"
         ></motion.div>
@@ -34,7 +38,7 @@ export function HeroSection() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
           className="absolute bottom-40 left-20 w-40 h-40 bg-gradient-to-br from-[#00E5FF]/20 to-[#7B61FF]/20 rounded-full blur-2xl"
         ></motion.div>
@@ -66,8 +70,9 @@ export function HeroSection() {
             </h1>
 
             <p className="text-xl mb-8 max-w-xl">
-              I build intelligent apps, AI agents, and full-stack systems that solve real problems.
-              Specializing in scalable applications with cutting-edge AI integration.
+              I build intelligent apps, AI agents, and full-stack systems that
+              solve real problems. Specializing in scalable applications with
+              cutting-edge AI integration.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -78,7 +83,9 @@ export function HeroSection() {
                 className="px-8 py-4 bg-gradient-to-r from-[#7B61FF] to-[#00E5FF] rounded-xl hover-glow-cyan transition-all duration-300 text-center"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .querySelector("#projects")
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 Explore Projects
@@ -89,7 +96,10 @@ export function HeroSection() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 glass-strong rounded-xl hover:border-[#00E5FF] transition-all duration-300 flex items-center justify-center gap-2 group"
               >
-                <Download size={20} className="group-hover:text-[#00E5FF] transition-colors" />
+                <Download
+                  size={20}
+                  className="group-hover:text-[#00E5FF] transition-colors"
+                />
                 Download CV
               </motion.button>
             </div>
@@ -123,7 +133,7 @@ export function HeroSection() {
                 transition={{
                   duration: 20,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: "linear",
                 }}
                 className="absolute inset-0 rounded-full border-2 border-dashed border-[#00E5FF]/30 scale-110"
               ></motion.div>
@@ -136,13 +146,13 @@ export function HeroSection() {
                 transition={{
                   duration: 6,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
                 className="relative w-[400px] h-[400px] rounded-full glass-strong p-2 glow-cyan"
               >
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-white/10">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjUyOTI3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={profileImg}
                     alt="Muhammad Safwan"
                     className="w-full h-full object-cover"
                   />
@@ -156,7 +166,7 @@ export function HeroSection() {
                   transition={{
                     duration: 3,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: "easeInOut",
                   }}
                   className="absolute -top-4 -right-4 w-16 h-16 glass-strong rounded-2xl flex items-center justify-center glow-violet"
                 >
@@ -171,7 +181,7 @@ export function HeroSection() {
                     duration: 4,
                     repeat: Infinity,
                     ease: "easeInOut",
-                    delay: 1
+                    delay: 1,
                   }}
                   className="absolute -bottom-4 -left-4 w-16 h-16 glass-strong rounded-2xl flex items-center justify-center glow-cyan"
                 >
@@ -187,7 +197,7 @@ export function HeroSection() {
                 transition={{
                   duration: 15,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: "linear",
                 }}
                 className="absolute top-1/4 -left-20 w-12 h-12 glass rounded-xl flex items-center justify-center"
               >
@@ -201,7 +211,7 @@ export function HeroSection() {
                 transition={{
                   duration: 18,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: "linear",
                 }}
                 className="absolute bottom-1/4 -right-16 w-12 h-12 glass rounded-xl flex items-center justify-center"
               >
@@ -220,7 +230,7 @@ export function HeroSection() {
         transition={{
           duration: 2,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
       >
