@@ -25,14 +25,14 @@ const projects = [
     demo: "#",
   },
   {
-    title: "AI Tools Collection",
+    title: "Safwan Restaurant AI Assistant",
     description:
-      "Comprehensive suite of AI-powered tools for image generation, audio processing, and text analysis with intuitive interfaces.",
+      "Safwan Restaurant AI is a Flask and LangChain–based chatbot that helps customers browse menus, check prices, ask questions, and place orders by combining structured business logic with AI-driven conversation for fast, human-like service.",
     image:
-      "https://images.unsplash.com/photo-1763568258235-f40425a94af9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwdG9vbHN8ZW58MXx8fHwxNzY1MzA0MjcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    tech: ["Next.js", "OpenAI", "Stable Diffusion", "Whisper", "Tailwind"],
+      "../assets/RestaurantAI.png",
+    tech: ["Langchain", "OpenAI", "Flask", "Tailwind"],
     github: "#",
-    demo: "#",
+    demo: "https://chatbot-git-main-mohammadsafwan97s-projects.vercel.app/",
   },
   {
     title: "Jarvis Voice AI Assistant",
@@ -62,7 +62,7 @@ const projects = [
       "https://images.unsplash.com/photo-1722739541715-1d59cde9cca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZGluaW5nJTIwbW9kZXJufGVufDF8fHx8MTc2NTM2MjA0NHww&ixlib=rb-4.1.0&q=80&w=1080",
     tech: ["Django", "Python", "SQLite", "Bootstrap", "REST API"],
     github: "#",
-    demo: "#",
+    demo: "https://django-restraunt-app.onrender.com/",
   },
   {
     title: "Car Dealer App",
