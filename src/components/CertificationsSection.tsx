@@ -7,49 +7,57 @@ const certifications = [
     title: 'Full Stack Developer',
     icon: Code,
     color: '#0084FF',
-    year: '2024'
+    year: ''
   },
   {
     name: 'IBM',
     title: 'AI Developer',
     icon: Brain,
     color: '#006699',
-    year: '2024'
+    year: ''
   },
   {
     name: 'Vanderbilt',
     title: 'AI Agent Developer',
     icon: Brain,
     color: '#866D4B',
-    year: '2024'
+    year: ''
   },
   {
     name: 'AWS',
     title: 'Cloud Practitioner',
     icon: Cloud,
     color: '#FF9900',
-    year: '2024'
+    year: ''
   },
   {
     name: 'Google',
     title: 'AI Essentials',
     icon: Brain,
     color: '#4285F4',
-    year: '2024'
+    year: ''
   },
   {
     name: 'IBM',
     title: 'Ethical Hacking',
     icon: Lock,
     color: '#006699',
-    year: '2024'
+    year: ''
   },
   {
     name: 'Cisco',
     title: 'C++ Programming',
     icon: Code,
     color: '#1BA0D7',
-    year: '2023'
+    year: ''
+  }
+  ,
+  {
+    name: 'Google',
+    title: 'Google AI Essentials',
+    icon: Code,
+    color: '#1BA0D7',
+    year: ''
   }
 ];
 
@@ -65,9 +73,9 @@ export function CertificationsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
-          <h2 className="mb-4">
+          <h2 className="mb-4 text-[30px]">
             Certifications & <span className="gradient-text">Achievements</span>
           </h2>
           <p className="max-w-3xl mx-auto">

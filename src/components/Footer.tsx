@@ -15,20 +15,17 @@ export function Footer() {
     <footer className="relative py-12 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#7B61FF] to-[#00E5FF] flex items-center justify-center">
-                <span className="text-white font-bold">MS</span>
-              </div>
+              
               <span className="font-semibold">Muhammad Safwan</span>
             </div>
             <p className="text-sm text-[#94A3B8]">
-              Full Stack AI Engineer crafting intelligent solutions for tomorrow&apos;s challenges.
+              Aspiring Full Stack Developer focused on building scalable web applications
+              and intelligent systems using modern technologies.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -49,17 +46,22 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg mb-4">Get In Touch</h4>
             <ul className="space-y-2 text-sm text-[#94A3B8]">
               <li>
-                <a href="mailto:mohammadsafwan248@gmail.com" className="hover:text-[#00E5FF] transition-colors">
+                <a
+                  href="mailto:mohammadsafwan248@gmail.com"
+                  className="hover:text-[#00E5FF] transition-colors"
+                >
                   mohammadsafwan248@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+923011784166" className="hover:text-[#00E5FF] transition-colors">
+                <a
+                  href="tel:+923011784166"
+                  className="hover:text-[#00E5FF] transition-colors"
+                >
                   +92 301 1784166
                 </a>
               </li>
@@ -68,11 +70,10 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2 text-sm text-[#94A3B8]">
-              <span>© {currentYear} Muhammad Safwan. All rights reserved.</span>
+            <div className="text-sm text-[#94A3B8]">
+              © {currentYear} Muhammad Safwan. All rights reserved.
             </div>
 
             <motion.div
@@ -90,7 +91,6 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Decorative Gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#7B61FF] via-[#00E5FF] to-[#7B61FF] opacity-50"></div>
     </footer>
   );

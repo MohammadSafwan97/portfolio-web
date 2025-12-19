@@ -4,35 +4,46 @@ import { ExternalLink, Github, X } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const projects = [
-  {
-    title: "Django Restaurant Management System",
-    description:
-      "Full-featured restaurant management system enabling online ordering, table reservations, menu administration, and customer reviews, built using Django and RESTful APIs.",
-    image:
-      "https://images.unsplash.com/photo-1722739541715-1d59cde9cca4?fm=jpg&q=80&w=1080",
-    tech: ["Django", "Python", "SQLite", "Tailwind", "REST API"],
-    github: "https://github.com/MohammadSafwan97/Django-Restraunt-App",
-    demo: "https://django-restraunt-app.onrender.com/",
-    actions: { code: true, demo: true },
-  },
-  {
-    title: "Medical RAG-Based AI Chatbot",
-    description:
-      "AI-powered medical assistant leveraging Retrieval-Augmented Generation (RAG) to deliver context-aware responses from embedded medical documents, improving accuracy and reducing hallucinations.",
-    image:
-      "https://images.unsplash.com/photo-1758202292826-c40e172eed1c?fm=jpg&q=80&w=1080",
-    tech: ["Python", "LangChain", "Pinecone", "Flask", "RAG"],
-    github: "#",
-    demo: "",
-    actions: { code: true, demo: false },
-  },
+ {
+  title: "Django Restaurant Management System",
+  description:
+  "Django restaurant system with authentication, menu browsing, cart and checkout, table reservations, and user-specific order history, built with server-rendered views and Tailwind CSS.",
+
+  image:
+    "https://images.unsplash.com/photo-1722739541715-1d59cde9cca4?fm=jpg&q=80&w=1080",
+  tech: ["Django", "Python", "SQLite", "Tailwind CSS"],
+  github: "https://github.com/MohammadSafwan97/Django-Restraunt-App",
+  demo: "https://django-restraunt-app.onrender.com/",
+  actions: { code: true, demo: true },
+}
+,
+
+ {
+  title: "Medical Knowledge Retrieval System (RAG-Based)",
+  description:
+    "End-to-end medical document question-answering system built using Retrieval-Augmented Generation (RAG). The system extracts and preprocesses text from PDF-based medical books, generates embeddings, and stores them in a vector database for semantic search. A LangChain-powered RAG pipeline with OpenAI is used to produce grounded, context-aware responses via a Flask-based backend and chatbot interface. The system runs smoothly in an offline/local environment and is planned for production deployment; deployment is currently pending.",
+  image:
+    "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMGNoYXRib3R8ZW58MHx8MHx8fDA%3D",
+  tech: [
+    "Python",
+    "Flask",
+    "LangChain",
+    "OpenAI API",
+    "Vector Databases",
+    "RAG"
+  ],
+  github: "https://github.com/MohammadSafwan97/medical-rag-llm-langchain-pinecone-flask-aws",
+  demo: "",
+  actions: { code: true, demo: false },
+}
+,
   {
     title: "Restaurant AI Ordering Assistant",
     description:
       "Conversational AI assistant that enables customers to browse menus, check prices, place orders, and ask questions using natural language with AI-driven responses and structured business logic.",
-    image: "../assets/RestaurantAI.png",
+    image: "https://plus.unsplash.com/premium_photo-1758204526484-8aab4982f214?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMHJvYm90fGVufDB8fDB8fHww",
     tech: ["LangChain", "OpenAI API", "Flask", "TailwindCSS"],
-    github: "#",
+    github: "https://github.com/MohammadSafwan97/Restaurant-Ai-Assistant",
     demo: "https://chatbot-git-main-mohammadsafwan97s-projects.vercel.app/",
     actions: { code: true, demo: true },
   },
@@ -43,7 +54,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1562851529-c370841f6536?fm=jpg&q=80&w=1080",
     tech: ["Python", "Speech Recognition", "NLP", "APIs"],
-    github: "#",
+    github: "https://github.com/MohammadSafwan97/JarvisAI",
     demo: "",
     actions: { code: true, demo: false },
   },
@@ -52,10 +63,10 @@ const projects = [
     description:
       "Production-ready e-commerce platform with secure authentication, Stripe payments, product management, and an AI-powered chatbot for customer support.",
     image:
-      "https://images.unsplash.com/photo-1723705027411-9bfc3c99c2e9?fm=jpg&q=80&w=1080",
+      "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWNvbW1lcmNlfGVufDB8fDB8fHww",
     tech: ["React", "Node.js", "Flask", "OpenAI API", "Langchain"],
-    github: "#",
-    demo: "https://fullstack-react-ecommerce-3wt6.vercel.app",
+    github: "https://github.com/MohammadSafwan97/fullstack-react-ecommerce",
+    demo: "https://fullstack-react-ecommerce-2spl.vercel.app/",
     actions: { code: true, demo: true },
   },
 ];

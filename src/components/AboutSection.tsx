@@ -151,6 +151,7 @@ export function AboutSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="glass rounded-2xl p-6 hover:scale-105 transition-transform duration-300 group"
               >
+                
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#7B61FF] to-[#00E5FF] flex items-center justify-center group-hover:scale-110 transition-transform">
                     <skillGroup.icon size={24} className="text-white" />
