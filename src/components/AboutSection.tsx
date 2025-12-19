@@ -1,37 +1,43 @@
-import { motion } from 'framer-motion';
-import { Code2, Database, Brain, Cloud, Laptop, Server } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Code2, Database, Brain, Cloud, Laptop, Server } from "lucide-react";
 
 const skills = [
   {
-    category: 'Frontend',
+    category: "Frontend",
     icon: Laptop,
-    items: ['React', 'Next.js', 'TailwindCSS', 'Bootstrap', 'TypeScript']
+    items: ["React", "Next.js", "TailwindCSS", "Bootstrap", "TypeScript",],
   },
   {
-    category: 'Backend',
+    category: "Backend",
     icon: Server,
-    items: ['Node.js', 'Express', 'Flask', 'Django', 'FastAPI']
+    items: ["Node.js", "Express", "Flask", "Django"],
   },
   {
-    category: 'AI & LLM Systems',
+    category: "AI & LLM Systems",
     icon: Brain,
-    items: ['LangChain', 'OpenAI API', 'Hugging Face', 'RAG', 'Vector Databases']
+    items: [
+      "LangChain",
+      "OpenAI API",
+      "Hugging Face",
+      "RAG",
+      "Vector Databases",
+    ],
   },
   {
-    category: 'Databases',
+    category: "Databases",
     icon: Database,
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'ChromaDB', 'Pinecone']
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Pinecone"],
   },
   {
-    category: 'Cloud & DevOps',
+    category: "Cloud & DevOps",
     icon: Cloud,
-    items: ['AWS', 'Vercel', 'Docker', 'Git', 'CI/CD']
+    items: ["AWS", "Vercel", "Docker", "Git", "CI/CD"],
   },
   {
-    category: 'Languages',
+    category: "Languages",
     icon: Code2,
-    items: ['JavaScript', 'Python', 'TypeScript', 'C++', 'SQL']
-  }
+    items: ["JavaScript", "Python", "TypeScript", "C++", "SQL"],
+  },
 ];
 
 export function AboutSection() {
@@ -49,7 +55,8 @@ export function AboutSection() {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="max-w-3xl mx-auto">
-            Building production-ready software at the intersection of AI and full-stack engineering
+            Building production-ready software at the intersection of AI and
+            full-stack engineering
           </p>
         </motion.div>
 
@@ -63,14 +70,19 @@ export function AboutSection() {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg lg:text-xl leading-relaxed text-justify">
               Full Stack Engineer (AI Systems) with hands-on experience building
-              <span className="text-[#00E5FF]"> end-to-end web applications</span>, 
-              <span className="text-[#7B61FF]"> intelligent AI assistants</span>, and
-              retrieval-augmented generation (RAG) pipelines. Skilled in React,
-              Next.js, Node.js, Python, Flask, Django, LangChain, vector databases,
-              and cloud deployment. Certified by{' '}
+              <span className="text-[#00E5FF]">
+                {" "}
+                end-to-end web applications
+              </span>
+              ,
+              <span className="text-[#7B61FF]"> intelligent AI assistants</span>
+              , and retrieval-augmented generation (RAG) pipelines. Skilled in
+              React, Next.js, Node.js, Python, Flask, Django, LangChain, vector
+              databases, and cloud deployment. Certified by{" "}
               <span className="text-[#00E5FF]">
                 Meta, IBM, AWS, and Vanderbilt University via Coursera
-              </span>.
+              </span>
+              .
             </p>
 
             <div className="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
@@ -78,8 +90,10 @@ export function AboutSection() {
                 <div className="text-4xl font-semibold gradient-text mb-2">
                   4
                 </div>
-                <div className="text-lg  fond-semibold text-slate-200 ">
-                  Featured Projects
+                <div className=" ">
+                  <h1 className="mb-4 text-[30px]">
+              Featured <span className="gradient-text">Projects</span>
+            </h1>
                 </div>
               </div>
 
@@ -120,10 +134,11 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
+            text-lg
           >
-            <h3 className="mb-4">
+            <h1 className="mb-4 text-[30px]">
               Technical <span className="gradient-text">Expertise</span>
-            </h3>
+            </h1>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -144,7 +159,7 @@ export function AboutSection() {
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  {skillGroup.items.map(skill => (
+                  {skillGroup.items.map((skill) => (
                     <motion.span
                       key={skill}
                       whileHover={{ scale: 1.1 }}
