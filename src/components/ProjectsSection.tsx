@@ -4,47 +4,45 @@ import { ExternalLink, Github, X } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const projects = [
- {
-  title: "Django Restaurant Management System",
-  description:
-  "Django restaurant system with authentication, menu browsing, cart and checkout, table reservations, and user-specific order history, built with server-rendered views and Tailwind CSS.",
-
-  image:
-    "https://images.unsplash.com/photo-1722739541715-1d59cde9cca4?fm=jpg&q=80&w=1080",
-  tech: ["Django", "Python", "SQLite", "Tailwind CSS"],
-  github: "https://github.com/MohammadSafwan97/Django-Restraunt-App",
-  demo: "https://django-restraunt-app.onrender.com/",
-  actions: { code: true, demo: true },
-}
-,
-
- {
-  title: "Medical Knowledge Retrieval System (RAG-Based)",
-  description:
-    "End-to-end medical document question-answering system built using Retrieval-Augmented Generation (RAG). The system extracts and preprocesses text from PDF-based medical books, generates embeddings, and stores them in a vector database for semantic search. A LangChain-powered RAG pipeline with OpenAI is used to produce grounded, context-aware responses via a Flask-based backend and chatbot interface. The system runs smoothly in an offline/local environment and is planned for production deployment; deployment is currently pending.",
-  image:
-    "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMGNoYXRib3R8ZW58MHx8MHx8fDA%3D",
-  tech: [
-    "Python",
-    "Flask",
-    "LangChain",
-    "OpenAI API",
-    "Vector Databases",
-    "RAG"
-  ],
-  github: "https://github.com/MohammadSafwan97/medical-rag-llm-langchain-pinecone-flask-aws",
-  demo: "",
-  actions: { code: true, demo: false },
-}
-,
+  {
+    title: "Django Restaurant Management System",
+    description:
+      "Django restaurant system with authentication, menu browsing, cart and checkout, table reservations, and user-specific order history, built with server-rendered views and Tailwind CSS.",
+    image:
+      "https://images.unsplash.com/photo-1722739541715-1d59cde9cca4?fm=jpg&q=80&w=1080",
+    tech: ["Django", "Python", "SQLite", "Tailwind CSS"],
+    github: "https://github.com/MohammadSafwan97/Django-Restraunt-App",
+    demo: "https://django-restraunt-app.onrender.com/",
+    actions: { code: true, demo: true },
+  },
+  {
+    title: "Medical Knowledge Retrieval System (RAG-Based)",
+    description:
+      "End-to-end medical document question-answering system built using Retrieval-Augmented Generation (RAG). The system extracts and preprocesses text from PDF-based medical books, generates embeddings, and stores them in a vector database for semantic search. A LangChain-powered RAG pipeline with OpenAI is used to produce grounded, context-aware responses via a Flask-based backend and chatbot interface. The system runs smoothly in an offline/local environment and is planned for production deployment; deployment is currently pending.",
+    image:
+      "https://images.unsplash.com/photo-1659018966820-de07c94e0d01?w=500&auto=format&fit=crop&q=60",
+    tech: [
+      "Python",
+      "Flask",
+      "LangChain",
+      "OpenAI API",
+      "Vector Databases",
+      "RAG",
+    ],
+    github:
+      "https://github.com/MohammadSafwan97/medical-rag-llm-langchain-pinecone-flask-aws",
+    demo: "",
+    actions: { code: true, demo: false },
+  },
   {
     title: "Restaurant AI Ordering Assistant",
     description:
       "Conversational AI assistant that enables customers to browse menus, check prices, place orders, and ask questions using natural language with AI-driven responses and structured business logic.",
-    image: "https://plus.unsplash.com/premium_photo-1758204526484-8aab4982f214?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMHJvYm90fGVufDB8fDB8fHww",
+    image:
+      "https://plus.unsplash.com/premium_photo-1758204526484-8aab4982f214?w=500&auto=format&fit=crop&q=60",
     tech: ["LangChain", "OpenAI API", "Flask", "TailwindCSS"],
     github: "https://github.com/MohammadSafwan97/Restaurant-Ai-Assistant",
-    demo: "https://chatbot-coral-omega.vercel.app/ ",
+    demo: "https://chatbot-coral-omega.vercel.app/",
     actions: { code: true, demo: true },
   },
   {
@@ -63,7 +61,7 @@ const projects = [
     description:
       "Production-ready e-commerce platform with secure authentication, Stripe payments, product management, and an AI-powered chatbot for customer support.",
     image:
-      "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWNvbW1lcmNlfGVufDB8fDB8fHww",
+      "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60",
     tech: ["React", "Node.js", "Flask", "OpenAI API", "Langchain"],
     github: "https://github.com/MohammadSafwan97/fullstack-react-ecommerce",
     demo: "https://fullstack-react-ecommerce-2spl.vercel.app/",
@@ -88,7 +86,8 @@ export function ProjectsSection() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="max-w-3xl mx-auto">
-            Real-world applications demonstrating full-stack and AI engineering expertise
+            Real-world applications demonstrating full-stack and AI engineering
+            expertise
           </p>
         </motion.div>
 
@@ -114,11 +113,12 @@ export function ProjectsSection() {
 
                 <div className="p-6 flex flex-col flex-1">
                   <h4 className="mb-3">{project.title}</h4>
+
                   <p className="text-sm mb-4 line-clamp-3">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
@@ -127,6 +127,33 @@ export function ProjectsSection() {
                         {tech}
                       </span>
                     ))}
+                  </div>
+
+                  {/* Buttons always visible */}
+                  <div className="flex gap-3 mt-auto">
+                    {project.actions.code && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 px-3 py-2 glass-strong rounded-lg text-sm"
+                      >
+                        <Github size={14} />
+                        Code
+                      </a>
+                    )}
+
+                    {project.actions.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-[#7B61FF] to-[#00E5FF] rounded-lg text-sm"
+                      >
+                        <ExternalLink size={14} />
+                        Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -190,6 +217,7 @@ export function ProjectsSection() {
                     <span className="text-sm">View Code</span>
                   </a>
                 )}
+
                 {activeProject.actions.demo && (
                   <a
                     href={activeProject.demo}
