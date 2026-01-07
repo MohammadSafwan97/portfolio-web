@@ -53,7 +53,7 @@ const projects = [
     tech: ["React", "Node.js", "Flask", "OpenAI API", "Langchain"],
     github: "https://github.com/MohammadSafwan97/fullstack-react-ecommerce",
     demo: "https://fullstack-react-ecommerce-2spl.vercel.app/",
-    actions: { code: true, demo: true },
+    actions: { code: true, demo: false },
   },
 
   {
