@@ -15,6 +15,59 @@ const projects = [
     demo: "https://django-restraunt-app.onrender.com/",
     actions: { code: true, demo: true },
   },
+  
+  {
+    title: "Cafe AI Ordering Assistant",
+    description:
+      "Conversational AI assistant that enables customers to browse menus, timings, location, and ask questions using natural language with AI-driven responses and structured business logic.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1758204526484-8aab4982f214?w=500&auto=format&fit=crop&q=60",
+    tech: ["LangChain", "OpenAI API", "Flask", "TailwindCSS"],
+    github: "https://github.com/MohammadSafwan97/Restaurant-Ai-Assistant",
+    demo: "https://chatbot-xfci.vercel.app/",
+    actions: { code: true, demo: true },
+  },
+  {
+  title: "AI Review Analyzer",
+  description:
+    "AI-powered review analysis tool that automatically detects negative customer feedback, extracts complaints, determines sentiment severity, and flags critical reviews for escalation. Built with a modern frontend and LLM-based text analysis.",
+  image:
+    "https://images.unsplash.com/photo-1556155092-490a1ba16284?w=500&auto=format&fit=crop&q=60",
+  tech: [
+    "React",
+    "AI / NLP",
+    "OpenAI API",
+    "Vercel",
+    "Tailwind CSS",
+  ],
+  github: "https://github.com/MohammadSafwan97/ChatBots/tree/main/review_analyzer", // update if repo name differs
+  demo: "https://chat-bots-azure.vercel.app/",
+  actions: { code: true, demo: true },
+},
+{
+    title: "Full-Stack E-Commerce Platform with AI Chatbot",
+    description:
+      "Production-ready e-commerce platform with secure authentication, Stripe payments, product management, and an AI-powered chatbot for customer support.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60",
+    tech: ["React", "Node.js", "Flask", "OpenAI API", "Langchain"],
+    github: "https://github.com/MohammadSafwan97/fullstack-react-ecommerce",
+    demo: "https://fullstack-react-ecommerce-2spl.vercel.app/",
+    actions: { code: true, demo: true },
+  },
+
+  {
+    title: "Jarvis Voice AI Assistant",
+    description:
+      "Voice-enabled AI assistant supporting natural language understanding, task automation, API integrations, and speech-based interaction.",
+    image:
+      "https://images.unsplash.com/photo-1562851529-c370841f6536?fm=jpg&q=80&w=1080",
+    tech: ["Python", "Speech Recognition", "NLP", "APIs"],
+    github: "https://github.com/MohammadSafwan97/JarvisAI",
+    demo: "",
+    actions: { code: true, demo: false },
+  },
+  
   {
     title: "Medical Knowledge Retrieval System (RAG-Based)",
     description:
@@ -33,39 +86,6 @@ const projects = [
       "https://github.com/MohammadSafwan97/medical-rag-llm-langchain-pinecone-flask-aws",
     demo: "",
     actions: { code: true, demo: false },
-  },
-  {
-    title: "Restaurant AI Ordering Assistant",
-    description:
-      "Conversational AI assistant that enables customers to browse menus, check prices, place orders, and ask questions using natural language with AI-driven responses and structured business logic.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1758204526484-8aab4982f214?w=500&auto=format&fit=crop&q=60",
-    tech: ["LangChain", "OpenAI API", "Flask", "TailwindCSS"],
-    github: "https://github.com/MohammadSafwan97/Restaurant-Ai-Assistant",
-    demo: "https://chatbot-coral-omega.vercel.app/",
-    actions: { code: true, demo: true },
-  },
-  {
-    title: "Jarvis Voice AI Assistant",
-    description:
-      "Voice-enabled AI assistant supporting natural language understanding, task automation, API integrations, and speech-based interaction.",
-    image:
-      "https://images.unsplash.com/photo-1562851529-c370841f6536?fm=jpg&q=80&w=1080",
-    tech: ["Python", "Speech Recognition", "NLP", "APIs"],
-    github: "https://github.com/MohammadSafwan97/JarvisAI",
-    demo: "",
-    actions: { code: true, demo: false },
-  },
-  {
-    title: "Full-Stack E-Commerce Platform with AI Chatbot",
-    description:
-      "Production-ready e-commerce platform with secure authentication, Stripe payments, product management, and an AI-powered chatbot for customer support.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1684785618727-378a3a5e91c5?w=500&auto=format&fit=crop&q=60",
-    tech: ["React", "Node.js", "Flask", "OpenAI API", "Langchain"],
-    github: "https://github.com/MohammadSafwan97/fullstack-react-ecommerce",
-    demo: "https://fullstack-react-ecommerce-2spl.vercel.app/",
-    actions: { code: true, demo: true },
   },
 ];
 
